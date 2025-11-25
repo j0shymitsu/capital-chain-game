@@ -16,11 +16,11 @@
 class Prototype
 {
     public:
-        Prototype(std::string& file_name);
-        std::string getCity(char& start_letter);
-        bool checkCity(std::string& city);          // Checks if valid
-        void markUsed(std::string& city);
-        static void restart();
+        Prototype(std::string file_name);
+        std::string getCity(char start_letter);
+        bool checkCity(std::string city);          // Checks if valid
+        void markUsed(std::string city);
+        void restart();
     private:
         std::vector<std::string> all_cities;
         std::vector<std::string> used_cities;
