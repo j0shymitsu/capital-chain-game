@@ -68,6 +68,14 @@ string Prototype::getCity(char start_letter)
 // Check if given city is valid and unused
 bool Prototype::checkCity(std::string city)
 {
+    for (int i = 0; i < used_cities.size(); i++)
+    {
+        if (city == used_cities[i])
+        {
+            return false;
+        }
+    }
+
     for (int i = 0; i < all_cities.size(); i++)
     {
         if (city == all_cities[i])
@@ -82,7 +90,7 @@ bool Prototype::checkCity(std::string city)
 // Mark given city as used
 void Prototype::markUsed(std::string city)
 {
-    if (!checkCity(city))
+    if (checkCity(city))
     {
         used_cities.push_back(city);
     }
