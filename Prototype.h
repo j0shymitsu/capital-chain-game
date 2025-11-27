@@ -6,11 +6,11 @@
 
 /*
 	O notation: fill in your time complexities here
-		-	Constructor:	_____
-		-	getCity:		_____
-		-	checkCity:		_____
-		-	markUsed		_____
-		-	restart			_____
+		-	Constructor:    O(n)
+		-	getCity:		O(n^2) (worst case)
+		-	checkCity:      O(n)
+		-	markUsed		O(n)
+		-	restart			O(1)
 */
 
 class Prototype
