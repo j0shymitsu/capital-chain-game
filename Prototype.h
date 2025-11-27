@@ -10,7 +10,7 @@
 		-	getCity:		O(n^2) (worst case)
 		-	checkCity:      O(n)
 		-	markUsed		O(n)
-		-	restart			O(1)
+		-	restart			O(n)
 */
 
 class Prototype
